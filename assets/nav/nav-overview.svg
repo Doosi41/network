@@ -1,15 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="280" height="72" viewBox="0 0 280 72" role="img" aria-label="Navigation: OVERVIEW"><title>Navigation: OVERVIEW</title><style>
 text{font-family:"IBM Plex Mono","JetBrains Mono",Menlo,Consolas,"DejaVu Sans Mono","Courier New",monospace;white-space:pre}
-.g{fill:#00FF41}.s{fill:#00B85A}.a{fill:#FFB000}.m{fill:#708C75}.w{fill:#C8E6CC}.d{fill:#0d4d22}.r{fill:#FF4545}
-.b{font-weight:700}
+.ser{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","DejaVu Serif",serif}
+.t{fill:#D5D1C6}.a{fill:#CE9954}.s{fill:#7196A9}.m{fill:#858890}.d{fill:#454C58}.gr{fill:#799181}
+.b{font-weight:700}.i{font-style:italic}
 </style><defs>
-<filter id="glow" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<filter id="glowS" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<pattern id="sl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#00FF41" opacity=".055"/></pattern>
-<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#00FF41" stroke-opacity=".045"/></pattern>
-<radialGradient id="vg" cx="50%" cy="50%" r="78%"><stop offset="62%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".6"/></radialGradient>
-<radialGradient id="scr" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#0b3a1a"/><stop offset=".6" stop-color="#04180c"/><stop offset="1" stop-color="#010a05"/></radialGradient>
-<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26322a"/><stop offset=".5" stop-color="#141c16"/><stop offset="1" stop-color="#0b100c"/></linearGradient>
-<radialGradient id="halo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#00FF41" stop-opacity=".22"/><stop offset="1" stop-color="#00FF41" stop-opacity="0"/></radialGradient>
+<pattern id="sl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#D5D1C6" opacity=".035"/></pattern>
+<pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1.6" cy="1.6" r=".75" fill="#D5D1C6" opacity=".055"/></pattern>
+<pattern id="haz" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="16" fill="#7E3F45"/><rect x="8" width="8" height="16" fill="#12141a"/></pattern>
+<radialGradient id="vg" cx="50%" cy="50%" r="80%"><stop offset="65%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".5"/></radialGradient>
+<radialGradient id="scr" cx="50%" cy="42%" r="75%"><stop offset="0" stop-color="#241b0d"/><stop offset=".55" stop-color="#120e07"/><stop offset="1" stop-color="#08090b"/></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#262b35"/><stop offset=".5" stop-color="#171b23"/><stop offset="1" stop-color="#0f1218"/></linearGradient>
 </defs>
-<rect width="280" height="72" fill="#050805"/><rect x="2" y="2" width="276" height="68" rx="0" fill="#0a110b" stroke="#00B85A" stroke-width="2" /><path d="M2 12V2H12 M268 2H278V12 M2 60V70H12 M268 70H278V60" fill="none" stroke="#FFB000" stroke-width="2"/><text x="26" y="44" font-size="22" class="a b" text-anchor="start" >A</text><text x="72" y="44" font-size="22" class="g b" text-anchor="start" letter-spacing="2">OVERVIEW</text></svg>
+<rect width="280" height="72" fill="#0B0D11"/><rect x="2" y="2" width="276" height="68" rx="0" fill="#171B23" stroke="#454C58" stroke-width="1.5" /><rect x="2" y="2" width="276" height="4" rx="0" fill="#CE9954" /><text x="26" y="46" font-size="26" class="a ser b i" text-anchor="start" >A</text><text x="62" y="46" font-size="19" class="t b" text-anchor="start" letter-spacing="3">OVERVIEW</text></svg>
