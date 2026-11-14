@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="270" viewBox="0 0 760 270" role="img" aria-label="Decorative animated network topology: workstation, router, firewall, server. Green packets pass through, one red packet is dropped at the firewall.">
+<title>Decorative network topology: WORKSTATION to ROUTER to FIREWALL to SERVER</title>
+<style>
+text{font-family:"IBM Plex Mono","JetBrains Mono",Menlo,Consolas,"Courier New",monospace;white-space:pre}
+.g{fill:#00FF41}.s{fill:#00B85A}.a{fill:#FFB000}.m{fill:#708C75}.r{fill:#FF4545}
+.node{fill:#050805;stroke:#00B85A;stroke-width:1.5}
+.fw{stroke:#FFB000}
+.link{stroke:#12301a;stroke-width:2;stroke-dasharray:4 4;animation:flow 1.2s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-8}}
+@media (prefers-reduced-motion:reduce){.link{animation:none}}
+</style>
+<defs>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="sl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#00FF41" opacity=".06"/></pattern>
+<radialGradient id="vg" cx="50%" cy="50%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".55"/></radialGradient>
+</defs>
+<rect width="760" height="270" rx="10" fill="#050805"/>
+<rect x=".5" y=".5" width="759" height="269" rx="10" fill="none" stroke="#12301a"/>
+<text x="24" y="30" font-size="13" class="s">$ traceroute --decorative srv.lab</text>
+
+<!-- links -->
+<path class="link" d="M158 130H215M331 130H429M545 130H602" fill="none"/>
+
+<!-- packets (behind nodes) -->
+<g filter="url(#glow)">
+<circle r="4" fill="#00FF41"><animateMotion dur="5s" begin="0s" repeatCount="indefinite" path="M100 130H660"/></circle>
+<circle r="4" fill="#00FF41"><animateMotion dur="5s" begin="-3.3s" repeatCount="indefinite" path="M100 130H660"/></circle>
+<circle r="4" fill="#00FF41"><animateMotion dur="5s" begin="-1.6s" repeatCount="indefinite" path="M100 130H660"/></circle>
+<circle r="4" fill="#FF4545"><animateMotion dur="5s" begin="-4.2s" repeatCount="indefinite" path="M100 130H405" keyPoints="0;1;1" keyTimes="0;0.6;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.05;0.6;0.65;1" dur="5s" begin="-4.2s" repeatCount="indefinite"/></circle>
+</g>
+
+<!-- nodes -->
+<g>
+<rect class="node" x="42" y="90" width="116" height="80"/>
+<text x="100" y="124" text-anchor="middle" font-size="12" class="g">WORKSTATION</text>
+<text x="100" y="144" text-anchor="middle" font-size="11" class="m">192.168.1.10</text>
+<rect class="node" x="215" y="90" width="116" height="80"/>
+<text x="273" y="124" text-anchor="middle" font-size="12" class="g">ROUTER</text>
+<text x="273" y="144" text-anchor="middle" font-size="11" class="m">192.168.1.1</text>
+<rect class="node fw" x="429" y="90" width="116" height="80"/>
+<text x="487" y="124" text-anchor="middle" font-size="12" class="a">FIREWALL</text>
+<text x="487" y="144" text-anchor="middle" font-size="11" class="m">10.0.0.254</text>
+<rect class="node" x="602" y="90" width="116" height="80"/>
+<text x="660" y="124" text-anchor="middle" font-size="12" class="g">SERVER</text>
+<text x="660" y="144" text-anchor="middle" font-size="11" class="m">10.0.0.10</text>
+</g>
+<!-- corner ticks -->
+<g stroke="#00FF41" stroke-width="2" fill="none" opacity=".7">
+<path d="M42 98V90h8M158 98V90h-8M42 162v8h8M158 162v8h-8"/>
+<path d="M215 98V90h8M331 98V90h-8M215 162v8h8M331 162v8h-8"/>
+<path d="M602 98V90h8M718 98V90h-8M602 162v8h8M718 162v8h-8"/>
+</g>
+<g stroke="#FFB000" stroke-width="2" fill="none" opacity=".8"><path d="M429 98V90h8M545 98V90h-8M429 162v8h8M545 162v8h-8"/></g>
+
+<text x="487" y="82" text-anchor="middle" font-size="11" class="r"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.58;0.8;0.9;1" dur="5s" begin="-4.2s" repeatCount="indefinite"/>DROP</text>
+
+<text x="100" y="206" text-anchor="middle" font-size="11" class="m">L7 → L1</text>
+<text x="273" y="206" text-anchor="middle" font-size="11" class="m">L3 routing</text>
+<text x="487" y="206" text-anchor="middle" font-size="11" class="m">L3/L4 filter</text>
+<text x="660" y="206" text-anchor="middle" font-size="11" class="m">L7 service</text>
+
+<text x="24" y="250" font-size="11" class="m"><tspan class="g">●</tspan> allowed   <tspan class="r">●</tspan> dropped   // decorative diagram, not my real infrastructure</text>
+<rect y="40" width="760" height="230" fill="url(#sl)" pointer-events="none"/>
+<rect width="760" height="270" rx="10" fill="url(#vg)" pointer-events="none"/>
+</svg>
