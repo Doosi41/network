@@ -1,166 +1,99 @@
-<div align="center">
+<a id="top"></a>
 
-<img src="assets/terminal-header.svg" alt="Animated UNIX terminal boot sequence: kernel modules load, the NETWORK logo appears, whoami prints Doosi41, a cursor blinks after cat readme.md" width="100%">
+<p align="center">
+  <img src="assets/hero.svg" alt="BLACKSITE — NETWORK // UNDERGROUND. System online. Network engineering, Linux, security. Illustration of a vintage CRT terminal with network cables and chips." width="100%">
+</p>
 
-**[ [01 WHOAMI](#01--whoami) ] [ [02 MODULES](#02--system-modules) ] [ [03 TOPOLOGY](#03--network-topology) ] [ [04 ARCHIVE](#04--project-archive) ] [ [05 LINUX & SEC](#05--cybersecurity--linux) ] [ [06 ACTIVITY](#06--github-activity) ] [ [07 CYPHERPUNK](#07--cypherpunk-corner) ] [ [08 CONNECT](#08--contact) ]**
+<p align="center">
+  <a href="#overview"><img src="assets/nav/nav-overview.svg" alt="A — Overview" width="150"></a>
+  <a href="#network"><img src="assets/nav/nav-network.svg" alt="B — Network" width="150"></a>
+  <a href="#roadmap"><img src="assets/nav/nav-roadmap.svg" alt="C — Roadmap" width="150"></a>
+  <a href="#lab"><img src="assets/nav/nav-lab.svg" alt="D — Laboratory" width="150"></a>
+  <a href="#archive"><img src="assets/nav/nav-archive.svg" alt="E — Archive" width="150"></a>
+</p>
 
-</div>
+<a id="overview"></a>
 
-<img src="assets/cyberpunk-divider.svg" alt="" width="100%">
+<p align="center">
+  <img src="assets/overview.svg" alt="System overview: networking, Linux, security and laboratory." width="100%">
+</p>
 
-## 01 / WHOAMI
+<a id="network"></a>
 
-```console
-$ whoami
-Doosi41
+<p align="center">
+  <img src="assets/network-path.svg" alt="Packet path: workstation, switch, router, internet, server — with documentation IP addresses and the OSI layers each device handles." width="100%"><br>
+  <img src="assets/tcpip-stack.svg" alt="TCP/IP stack as five hardware boards, the Ethernet frame encapsulation and a real IPv4 header in hex." width="100%">
+</p>
 
-$ cat ~/.plan
-Изучаю компьютерные сети с нуля: от кабеля до пакета.
-Теория — своими словами (notes/), практика — руками в терминале (labs/).
-Лог начат 2026-11-14. Здесь только то, что реально изучено или записано.
+<a id="roadmap"></a>
 
-$ echo $STATUS
-learning   # не эксперт, не сертифицирован, не продаю услуги
-```
+<p align="center">
+  <img src="assets/roadmap/roadmap-head.svg" alt="Learning roadmap — 0 of 8 modules completed. Notes are templates, labs are empty." width="100%"><br>
+  <a href="notes/01-basics.md"><img src="assets/roadmap/card-01.svg" alt="01 BASICS — OSI, TCP/IP. Open notes/01-basics.md" width="100%"></a><br>
+  <a href="notes/02-physical-link.md"><img src="assets/roadmap/card-02.svg" alt="02 LINK — Ethernet, MAC, switches, VLAN. Open notes/02-physical-link.md" width="100%"></a><br>
+  <a href="notes/03-ip.md"><img src="assets/roadmap/card-03.svg" alt="03 IP — addressing, subnets, routing. Open notes/03-ip.md" width="100%"></a><br>
+  <a href="notes/04-transport.md"><img src="assets/roadmap/card-04.svg" alt="04 TRANSPORT — TCP, UDP, ports. Open notes/04-transport.md" width="100%"></a><br>
+  <a href="notes/05-app-protocols.md"><img src="assets/roadmap/card-05.svg" alt="05 APP — DNS, DHCP, HTTP/HTTPS, TLS. Open notes/05-app-protocols.md" width="100%"></a><br>
+  <a href="notes/06-nat-firewall.md"><img src="assets/roadmap/card-06.svg" alt="06 PERIMETER — NAT, firewall, VPN. Open notes/06-nat-firewall.md" width="100%"></a><br>
+  <a href="notes/07-wifi.md"><img src="assets/roadmap/card-07.svg" alt="07 AIR — Wi-Fi. Open notes/07-wifi.md" width="100%"></a><br>
+  <a href="notes/08-tools.md"><img src="assets/roadmap/card-08.svg" alt="08 ARSENAL — ping, traceroute, dig, curl, tcpdump. Open notes/08-tools.md" width="100%"></a>
+</p>
 
-<img src="assets/cyberpunk-divider.svg" alt="" width="100%">
+<a id="lab"></a>
 
-## 02 / SYSTEM MODULES
+<p align="center">
+  <img src="assets/laboratory.svg" alt="Laboratory terminal with example commands: ping, traceroute, dig, curl, tcpdump. Output is not shown." width="100%">
+</p>
 
-```console
-$ ls /usr/local/skills/
-```
-
-Модули — это программа обучения. Статус честный: пока ни один не пройден.
-
-| Статус | Модуль | Слой | Что внутри | Конспект |
-|:-:|---|:-:|---|---|
-| `[ .. ]` | **networking/basics** | — | OSI, TCP/IP, что такое сеть | [01-basics](notes/01-basics.md) |
-| `[ .. ]` | **networking/link** | L1–L2 | Ethernet, MAC, коммутаторы, VLAN | [02-physical-link](notes/02-physical-link.md) |
-| `[ .. ]` | **networking/ip** | L3 | адресация, подсети, маршрутизация | [03-ip](notes/03-ip.md) |
-| `[ .. ]` | **networking/transport** | L4 | TCP, UDP, порты, рукопожатие | [04-transport](notes/04-transport.md) |
-| `[ .. ]` | **networking/app** | L7 | DNS, DHCP, HTTP/HTTPS, TLS | [05-app-protocols](notes/05-app-protocols.md) |
-| `[ .. ]` | **security/perimeter** | L3–L4 | NAT, firewall, VPN | [06-nat-firewall](notes/06-nat-firewall.md) |
-| `[ .. ]` | **networking/air** | L1–L2 | Wi-Fi | [07-wifi](notes/07-wifi.md) |
-| `[ .. ]` | **tools/cli** | — | ping, traceroute, dig, curl, tcpdump, Wireshark | [08-tools](notes/08-tools.md) |
-
-```
-legend:  [ .. ] planned    [ >> ] in progress    [ OK ] done & practiced in labs/
-progress [░░░░░░░░░░░░░░░░░░░░]  0 / 8
-```
-
-<img src="assets/cyberpunk-divider.svg" alt="" width="100%">
-
-## 03 / NETWORK TOPOLOGY
-
-<img src="assets/network-topology.svg" alt="Decorative animated network diagram: a workstation connects through a router and a firewall to a server. Green packets pass; a red packet is dropped at the firewall." width="100%">
-
-Путь, который я учусь прослеживать: `WORKSTATION → ROUTER → FIREWALL → SERVER`.
-Схема декоративная — это не моя реальная инфраструктура.
-
-<img src="assets/cyberpunk-divider.svg" alt="" width="100%">
-
-## 04 / PROJECT ARCHIVE
+<details>
+<summary><b>▸ copy-paste the lab commands</b></summary>
 
 ```console
-$ ls -la ~/projects/
-drwxr-xr-x  network/    # этот репозиторий
-
-$ cat ~/projects/network/INFO
-name     : network
-purpose  : конспекты и лабы по компьютерным сетям
-stack    : Markdown, shell (labs/ пока пуст)
-source   : https://github.com/Doosi41/network
-status   : active, early stage (0/8 модулей)
+ping -c 4 192.0.2.1
+traceroute -n 203.0.113.80
+dig example.com A +short
+curl -v https://example.com
+sudo tcpdump -i en0 -nn 'tcp port 443'
 ```
 
-```
-network/
-├── readme.md     ← ты здесь
-├── assets/       ← SVG-графика этого лендинга
-├── notes/        ← конспекты по темам
-└── labs/         ← практика: команды, скрипты, дампы
-```
+`192.0.2.1` и `203.0.113.80` — адреса из блоков для документации (RFC 5737): на них ничего не отвечает. Для реальной практики подставь свой роутер или `example.com`. Результаты и дампы складывай в [`labs/`](labs/).
 
-<img src="assets/cyberpunk-divider.svg" alt="" width="100%">
+</details>
 
-## 05 / CYBERSECURITY & LINUX
+<details>
+<summary><b>▸ method: read → write → hack → break → repeat</b></summary>
 
-Раздел — про то, что я учу, а не про то, что умею. Примеры ниже — учебные, не из реальных систем.
+1. **READ** — прочитал тему.
+2. **WRITE** — записал главное своими словами в [`notes/`](notes/).
+3. **HACK** — повторил руками в терминале → [`labs/`](labs/).
+4. **BREAK** — сломал, посмотрел в `tcpdump` / Wireshark, понял почему.
+5. **REPEAT** — непонятное → раздел «Вопросы» конспекта, вернуться позже.
 
-```console
-$ man tcp
-TCP(7)                       Learning Manual                       TCP(7)
+Проверять всё только в **собственной сети или лабораторной среде**. Чужие сети без разрешения владельца не трогаем.
 
-NAME
-       tcp — надёжная, упорядоченная доставка байтов поверх IP
+</details>
 
-THREE-WAY HANDSHAKE
-       client                                   server
-         │ ── SYN, seq=x ───────────────────────► │   «хочу соединиться»
-         │ ◄─────────────── SYN+ACK, seq=y, ack=x+1 │   «слышу, готов»
-         │ ── ACK, ack=y+1 ─────────────────────► │   «поехали»
-```
+<details>
+<summary><b>▸ primary sources: RFC</b></summary>
 
-```console
-$ ls -l /etc/passwd
--rw-r--r--  1 root  wheel  ...  /etc/passwd
-   │└┬┘└┬┘└┬┘
-   │ │  │  └─ other : r--   читать могут все
-   │ │  └──── group : r--
-   │ └─────── owner : rw-   писать может только владелец
-   └───────── тип   : -     обычный файл
-```
+| RFC | Тема |
+|---|---|
+| [RFC 791](https://www.rfc-editor.org/rfc/rfc791) | IP |
+| [RFC 792](https://www.rfc-editor.org/rfc/rfc792) | ICMP (ping) |
+| [RFC 793](https://www.rfc-editor.org/rfc/rfc793) | TCP |
+| [RFC 768](https://www.rfc-editor.org/rfc/rfc768) | UDP |
+| [RFC 1034](https://www.rfc-editor.org/rfc/rfc1034) / [1035](https://www.rfc-editor.org/rfc/rfc1035) | DNS |
+| [RFC 5737](https://www.rfc-editor.org/rfc/rfc5737) | адреса для документации |
 
-```console
-$ sudo tcpdump -i en0 -n port 53        # в планах: смотреть DNS своими глазами
-```
+</details>
 
-<img src="assets/cyberpunk-divider.svg" alt="" width="100%">
+<a id="archive"></a>
 
-## 06 / GITHUB ACTIVITY
+<p align="center">
+  <img src="assets/cypherpunk.svg" alt="Cypherpunk archive: Bitcoin genesis block header in hex with its verified hash, a public/private key diagram and a decentralised mesh." width="100%">
+</p>
 
-```console
-$ git log --oneline        # снимок на момент написания README
-0814456 Redesign readme as retro terminal landing page
-7c661a6 Add network learning notes structure and retro-style readme
-25d605f Initial commit
-```
-
-Только реальные данные: без сторонних виджетов, которые могут сломаться или показать чужую статистику.
-
-<img src="assets/cyberpunk-divider.svg" alt="" width="100%">
-
-## 07 / CYPHERPUNK CORNER
-
-<img src="assets/bitcoin-terminal.svg" alt="Hex dump of the Bitcoin genesis block header with its double SHA-256 hash starting with ten zeros, and the coinbase message from The Times, 3 January 2009." width="100%">
-
-Genesis-блок Bitcoin: 80 байт заголовка, двойной SHA-256 и ровно 10 нулей в начале хеша — вот и весь proof of work.
-Хеш пересчитан и совпал с опубликованным. Никаких кошельков и адресов: это просто история и красивый hex.
-
-> *«Cypherpunks write code.»* — Eric Hughes, A Cypherpunk's Manifesto, 1993
-
-<img src="assets/cyberpunk-divider.svg" alt="" width="100%">
-
-## 08 / CONTACT
-
-```console
-$ ./connect.sh
-> INITIALIZING CONNECTION...
-> RESOLVING ENDPOINT... github.com
-> READY FOR INCOMING TRANSMISSION.
-```
-
-<div align="center">
-
-**[ [ GITHUB · Doosi41 ](https://github.com/Doosi41) ]**
-
-</div>
-
-```console
-root@localhost:~# logout
-Connection to network closed.
-[ session terminated · 0 packets lost · EOF ]
-```
-
-> ⚠ Всё описанное проверяется **только в собственной сети или в лабораторной среде**. Чужие сети без разрешения владельца не трогаем.
+<p align="center">
+  <img src="assets/final.svg" alt="Connection terminated. End of transmission." width="100%"><br>
+  <a href="#top"><img src="assets/nav/back-to-top.svg" alt="Back to top" width="200"></a>
+</p>
